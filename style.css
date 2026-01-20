@@ -1,0 +1,114 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PressStart";
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
+
+/* background */
+body {
+  min-height: 100vh;
+  font-family: "PressStart", Arial, sans-serif;
+  color: white;
+
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* main content */
+.maincontent {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* heading */
+.heading h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+
+  text-shadow:
+    0 0 5px #fff,
+    0 0 15px #9ddcff,
+    0 0 30px #5fa8ff;
+}
+
+.heading p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 120px;
+}
+
+/* windows */
+.window {
+  width: 70%;
+  max-width: 700px;
+
+  aspect-ratio: 3/2;
+
+  margin: 100px auto;
+
+  background-image: url("win-frame.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(6px);
+
+  position: relative;
+  overflow: hidden;
+
+  /* shadow */
+  filter: drop-shadow(0 35px 70px rgba(0, 0, 0, 0.9));
+}
+
+.window-content {
+  position: absolute;
+
+  top: 105px;
+  left: 50px;
+  right: 50px;
+  bottom: 70px;
+
+  text-align: center;
+}
+.window-content2 {
+  position: absolute;
+
+  top: 140px;
+  left: 50px;
+  right: 50px;
+  bottom: 70px;
+
+  text-align: center;
+}
+.window h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.window p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+/* links */
+a {
+  color: white;
+  text-decoration: underline;
+}
